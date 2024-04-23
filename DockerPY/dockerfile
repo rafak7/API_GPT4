@@ -1,0 +1,18 @@
+# Use a base image
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Argument to receive the application name at build time
+ARG APP_NAME=app551577.py
+
+# Set an environment variable with the default value
+ENV PYTHONUNBUFFERED=1
+ENV APP_NAME=${APP_NAME}
+
+# Copy the Python script into the container
+COPY ${APP_NAME} .
+
+# Command to run the application
+CMD python ${APP_NAME}

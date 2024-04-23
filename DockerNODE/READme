@@ -1,0 +1,3 @@
+Codigos para executar:
+1* docker build -t dimmoney-node .
+2* docker run -d -p 3000:3000 --name dimmoney-node123456 -v "C:\Users\Rafael\DockerNODE":/app-money dimmoney-node

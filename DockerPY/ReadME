@@ -1,0 +1,3 @@
+Comando para executar:
+1* docker build -t dimmoney-python .
+2* docker run --rm dimmoney-python
